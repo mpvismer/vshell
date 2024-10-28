@@ -52,7 +52,10 @@ def script(filePath):
 
 
 def configure_ipython():
-    get_ipython().magic(u'autocall 2');
+    '''
+    There are many way to set configure the IPython shell.
+    '''
+    get_ipython().magic(u'autocall 2')
 
     get_ipython().magic(u'automagic on')
 
@@ -74,6 +77,9 @@ def configure_ipython():
 
 
 def printglobals():
+    '''
+    Prints a list of modules and functions in the environment.
+    '''
     import inspect
     import types
 
